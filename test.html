@@ -1,0 +1,12 @@
+<textarea class="textarea"></textarea>
+<p>現在<span class="string_num">0</span>文字入力中です。</p>
+
+<script>
+	const textarea = document.querySelector('.textarea');
+	const string_num = document.querySelector('.string_num');
+	textarea.addEventListener('keyup',onKeyUp);
+		function onKeyUp(){
+			const inputText = textarea.value;
+			string_num.innerText = inputText.length;
+		}
+</script>
